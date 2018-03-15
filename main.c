@@ -46,7 +46,23 @@ Snake* createSnake(int y, int x){
 		return snake;
 	}
 }	
-
+//Negao
+/*comida* createComida(int y,int x){
+	int middley = calculateMiddleScreen(y);
+	int middlex = calculateMiddleScreen(x);
+    Comida* comida = (Comida*) malloc(sizeof(Comida));	
+	if(comida != NULL){
+		comida->coordinatey = middley;
+		comida->coordinatex = middlex;
+		return comida;
+	}	
+} 
+//criar comida ...
+/*
+void gerarComida(){
+	
+}
+*/
 int moveOnKeyboard(){
 	int ch = getch();
 	switch(ch){
@@ -103,6 +119,13 @@ void freeSnake(Snake* snake){
 void freeBoard(Screen* screen){
     free(screen);
 }
+//Negão
+/*void addRabo{
+	if(snake->coordinatex == comida)//(snake->coordinatex == comida){
+	  Snake*next = snake;
+	}
+}
+*/
 
 void shutdown(Screen* screen){
 	printw("O programa foi finalizado, aperte Enter pra sair!!");
@@ -142,18 +165,26 @@ int main(int argc, char const *argv[]){
 		int key = getch();
     	switch(key){
     		case KEY_LEFT:
+                //{  snake->coordinatex = snake->coordinatex + 1;}  //movimento //Negao
+    		
     		//	showSnake(screen->snake, );
 				refresh();
 				break;
     		case KEY_RIGHT:
+    		    //{  snake->coordinatex = snake->coordinatex - 1;}  //movimento //Negao
+    		
+    		
 			//	showSnake(screen->snake, KEY_RIGHT);
     			refresh();
 				break;
     		case KEY_UP:
+    			//{snake->coordinatey = snake->coordinatey + 1;}  //movimento //Negao
+    		
 			//	showSnake(screen->snake, KEY_UP);
     			refresh();
 				break;
     		case KEY_DOWN:
+    		    //{snake->coordinatey = snake->coordinatey + 1;}  //movimento //Negao
 			//	showSnake(screen->snake, KEY_DOWN);
 				refresh();
 				break;
